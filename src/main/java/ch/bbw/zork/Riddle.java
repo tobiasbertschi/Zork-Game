@@ -2,8 +2,8 @@ package ch.bbw.zork;
 
 public interface Riddle {
 
+    boolean solved = true;
 
-    public void solved();
-
-    public boolean start();
+     void start();
+     void riddle();
 }
