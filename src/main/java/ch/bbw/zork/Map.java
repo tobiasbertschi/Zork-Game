@@ -12,7 +12,7 @@ public class Map {
                 "Kit---Din---Bat\n" +
                 "       |\n" +
                 "       |\n" +
-                "       Bas---Lib---Stu\n" +
+                "      Bas---Lib---Stu\n" +
                 "       |\n" +
                 "       |\n" +
                 "Arm---For---Pri\n");

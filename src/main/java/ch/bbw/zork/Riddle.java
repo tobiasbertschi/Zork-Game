@@ -4,6 +4,6 @@ public interface Riddle {
 
     boolean solved = true;
 
-     void start();
-     void riddle();
+      boolean start();
+      void riddle();
 }
