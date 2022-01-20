@@ -28,7 +28,6 @@ public class Higherlower implements Riddle {
         int solution = (int) (Math.random() * (1000 - 1)) + 1;
         int number = 0;
         while (!solved){
-
             number = scanner.nextInt();
             if (number == solution) {
                 solved = true;
