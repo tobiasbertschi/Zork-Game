@@ -18,14 +18,14 @@ public class Guess implements Riddle {
     }
 
     @Override
-    public void start() {
+    public boolean start() {
             System.out.println("this is  a riddle");
             riddle();
         if (solved){
             System.out.println("the riddle is solved");
-
+            return true;
         }
-
+        return false;
     }
 
     @Override

@@ -11,23 +11,22 @@ public class Higherlower implements Riddle {
 
 
     @Override
-    public void start() {
+    public boolean start() {
         System.out.println("this is  a riddle");
         System.out.println("you have to guess my number");
         System.out.println("my number is between 1 and 1000");
         riddle();
         if (solved){
             System.out.println("the riddle is solved");
-
+            return true;
         }
-
+        return false;
     }
 
     @Override
     public void riddle() {
         int solution = (int) (Math.random() * (1000 - 1)) + 1;
         int number = 0;
-        boolean solved = false;
         while (!solved){
 
             number = scanner.nextInt();
