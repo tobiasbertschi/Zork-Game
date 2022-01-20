@@ -11,11 +11,11 @@ public class Calculate implements Riddle {
 
     @Override
     public boolean start() {
-        System.out.println("this is  a riddle");
-        System.out.println("you have to calculate");
+        System.out.println("This is  a riddle.");
+        System.out.println("You have to calculate.");
         riddle();
         if (solved){
-            System.out.println("the riddle is solved");
+            System.out.println("The riddle is solved!");
             return true;
         }
         return false;
@@ -34,7 +34,7 @@ public class Calculate implements Riddle {
             if (guess == solution){
                 solved = true;
             }else {
-                System.out.println("The answer was not correct try again");
+                System.out.println("The answer was not correct try again!");
                 System.out.println(number1 +" + "+ number2);
             }
     }

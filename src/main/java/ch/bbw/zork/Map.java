@@ -2,7 +2,6 @@ package ch.bbw.zork;
 
 public class Map {
 
-
     public static void show(Room currentroom) {
         System.out.println("you are in " + currentroom.shortDescription());
         System.out.println("This dungeon:\n" +
@@ -15,8 +14,6 @@ public class Map {
                 "      Bas---Lib---Stu\n" +
                 "       |\n" +
                 "       |\n" +
-                "Arm---For---Pri\n");
-
-
+                "Arm---For---Pri");
     }
 }
