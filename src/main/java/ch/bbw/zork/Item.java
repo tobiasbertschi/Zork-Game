@@ -9,13 +9,13 @@ public class Item {
     }
 
     private Types type;
-    private int weight;
+    private int id;
     private String note;
     private String description;
 
-    public Item(Types type, int weight, String note, String description) {
+    public Item(Types type, int id, String note, String description) {
         this.type = type;
-        this.weight = weight;
+        this.id = id;
         this.note = note;
         this.description = description;
     }
@@ -28,12 +28,12 @@ public class Item {
         this.type = type;
     }
 
-    public int getWeight() {
-        return weight;
+    public int getId() {
+        return id;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNote() {
