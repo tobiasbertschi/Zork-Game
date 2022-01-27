@@ -6,7 +6,13 @@ public class Timer {
     private long endtime;
 
     public String caluculateTime() {
-        String time = Long.toString(this.endtime - this.starttime);
+        long checkVar = (endtime - starttime) / 1000;
+        int h = (int) checkVar / 3600;
+        int m = (int) (checkVar / 60) % 60;
+        int s = (int) (checkVar % 60);
+
+        String time = String.format("%02d:%02d:%02d", h, m, s);
+
         return time;
     }
 
