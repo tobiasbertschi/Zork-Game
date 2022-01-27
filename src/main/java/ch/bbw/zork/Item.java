@@ -7,11 +7,11 @@ public class Item {
         PAPER,
         WEAPON
     }
-
     private Types type;
     private int id;
     private String note;
     private String description;
+
 
     public Item(Types type, int id, String note, String description) {
         this.type = type;
