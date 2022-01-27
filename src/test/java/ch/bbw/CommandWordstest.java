@@ -10,13 +10,13 @@ public class CommandWordstest {
     CommandWords cw;
 
     @BeforeEach
-    protected void setup(){
+    protected void setUp(){
       cw = new CommandWords();
 
     }
 
     @Test
-    void CommandWords(){
+    void commandWordsTest(){
         assertTrue(cw.isCommand("go"));
         assertTrue(cw.isCommand("quit"));
         assertTrue(cw.isCommand("help"));

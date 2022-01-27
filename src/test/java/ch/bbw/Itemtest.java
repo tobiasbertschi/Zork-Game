@@ -1,27 +1,15 @@
 package ch.bbw;
 
-import ch.bbw.zork.Game;
 import ch.bbw.zork.Item;
-import ch.bbw.zork.Room;
-import ch.bbw.zork.riddles.Calculate;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Array;
-import java.util.ArrayList;
-
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assumptions.assumeTrue;
-
 
 
 class Itemtest {
 
-    Item key;
-    Item paper;
-    Item weapon;
+    Item key, paper, weapon;
 
 
     @BeforeEach
@@ -34,27 +22,32 @@ class Itemtest {
     }
 
     @Test
-    void item(){
-        //item Types
+    void itemTypes(){
         assertTrue(key.getType() == Item.Types.KEY);
         assertTrue(paper.getType() == Item.Types.PAPER);
         assertTrue(weapon.getType() == Item.Types.WEAPON);
         key.setType(Item.Types.PAPER);
         assertTrue(key.getType() == Item.Types.PAPER);
-        //item id
+    }
+    @Test
+    void itemId(){
         assertEquals(1,key.getId());
         key.setId(4);
         assertEquals(4,key.getId());
-        //item note
+    }
+    @Test
+    void itemNote(){
         assertTrue(key.getNote() == "Key");
         key.setNote("Testkey");
         assertTrue(key.getNote() == "Testkey");
-        //item Description
+    }
+    @Test
+    void itemDescription(){
         assertTrue(key.getDescription() == "A key");
         key.setDescription("Test");
         assertTrue(key.getDescription() == "Test");
-
     }
+
 
 
 }
