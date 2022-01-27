@@ -7,6 +7,11 @@ public class Calculate implements Riddle {
 
     boolean solved = false;
     Scanner scanner = new Scanner(System.in);
+    int max;
+
+    public Calculate (int max) {
+        this.max = max;
+    }
 
 
     @Override
@@ -23,8 +28,8 @@ public class Calculate implements Riddle {
 
     @Override
     public void riddle() {
-    int number1 = (int) (Math.random() * (1000 - 1)) + 1;
-    int number2 = (int) (Math.random() * (1000 - 1)) + 1;
+    int number1 = (int) (Math.random() * (max - 1)) + 1;
+    int number2 = (int) (Math.random() * (max - 1)) + 1;
     int solution = number1 + number2;
     System.out.println(number1 +" + "+ number2);
     int guess;

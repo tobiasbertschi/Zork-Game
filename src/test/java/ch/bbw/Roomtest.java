@@ -27,7 +27,7 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
      protected void setUp(){
          key = new Item(Item.Types.KEY,1,"Key", "A key for a door");
          note = new Item(Item.Types.PAPER,2,"Note", "Nötli");
-         calculate = new Calculate();
+         calculate = new Calculate(100);
 
      }
 

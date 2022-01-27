@@ -8,13 +8,17 @@ public class Higherlower implements Riddle {
 
     boolean solved = false;
     Scanner scanner = new Scanner(System.in);
+    int max;
+    public Higherlower(int max) {
+        this.max = max;
+    }
 
 
     @Override
     public boolean start() {
         System.out.println("This is a riddle.");
         System.out.println("You have to guess my number.");
-        System.out.println("My number is between 1 and 1000.");
+        System.out.println("My number is between 1 and " + max +".");
         riddle();
         if (solved){
             System.out.println("The riddle is solved.");
@@ -25,7 +29,7 @@ public class Higherlower implements Riddle {
 
     @Override
     public void riddle() {
-        int solution = (int) (Math.random() * (1000 - 1)) + 1;
+        int solution = (int) (Math.random() * (max - 1)) + 1;
         int number = 0;
         while (!solved){
             number = scanner.nextInt();
