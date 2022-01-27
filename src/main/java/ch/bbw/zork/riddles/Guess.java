@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Guess implements Riddle {
 
+    boolean solved = false;
     Scanner scanner = new Scanner(System.in);
     String tip;
     String word;
@@ -18,10 +19,10 @@ public class Guess implements Riddle {
 
     @Override
     public boolean start() {
-        System.out.println("this is  a riddle");
+        System.out.println("This is  a riddle!");
         riddle();
         if (solved){
-            System.out.println("the riddle is solved");
+            System.out.println("The riddle is solved!");
             return true;
         }
         return false;
@@ -31,13 +32,11 @@ public class Guess implements Riddle {
     public void riddle() {
         System.out.println(tip);
         String string = "";
-        boolean solved = false;
         while (!solved){
             string = scanner.nextLine();
             if (string.equals(word)){
                 solved = true;
             }
         }
-        System.out.println("you solved the riddle");
     }
 }
