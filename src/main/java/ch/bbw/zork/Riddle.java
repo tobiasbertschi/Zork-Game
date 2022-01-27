@@ -6,4 +6,5 @@ public interface Riddle {
 
       boolean start();
       void riddle();
+
 }
